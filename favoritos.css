@@ -48,7 +48,14 @@ body{
     border: #ccc 1px solid;
     margin-right: 5px;
   }
-
+  .btn-tab{
+    color: white;
+    background-color: #041642;
+  }
   footer{
     height: 30px;
   }
+  div{
+    border: #041642;
+  }
+
