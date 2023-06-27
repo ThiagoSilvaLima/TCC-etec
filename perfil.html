@@ -10,14 +10,15 @@
     <link rel="stylesheet" href="perfil.css">
     <title>Perfil</title>
   </head>
-  <body>
+  <body style="background-color: #DAE3E7;">
   <!--navbar-->
-  <nav class="navbar navbar-expand-lg navbar-dark navbar-survival101">
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-survival101 p-">
     <div class="container ">
       
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      
       <div class="container p-1">
         <div class="collapse navbar-collapse" id="navbarColor02">
           <div class="container">
@@ -29,45 +30,97 @@
                 <a class="nav-link" href="#">Loja</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link href="# href="#">Favoritos</a>
+                <a class="nav-link" href="#">Favoritos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link border-bottom border-danger">Perfil <i class="ion-ios-arrow-down"></i><link href="file:///L:/Aulas%202023/TCC/TCC-etec/index.html#"></a>
+                <a class="nav-link border-bottom border-danger" href="#">Perfil <i class="ion-ios-arrow-down"></i></a>
               </li>
-              <li class="nav-item position-absolute end-0 border border-primary rounded">
-                <a class="nav-link" href="#">Login <i class="ion-ios-arrow-down"></i></a>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre <i class="ion-ios-arrow-down"></i></a>
+              </li>
+              <li class="nav-item position-absolute end-0 ">
+                <a class="nav-link" id="bt_login" href="#">LOGIN <i class="ion-ios-arrow-down"></i></a>
               </li>
             </ul>
           </div>
         </div>
-      </div>    
+      </div>
     </div>   
-    </nav>
-    <!--perfil-->
-    <header>
-      
-    
-      <div>
-      
-        
-        <img src="imgs/perfil/Rectangle 58.png" style="width: 100%;" alt="">
-        <div class="row">
-          
-          <div style="position: absolute; left: 30px; top: 260px;">
-            <img src="imgs/perfil/azul.jpg" class="img-fluid" style="border-radius: 50%; height: 200px; width: 200px;" alt="Imagem">
+  </nav>
+  <!--perfil-->
+  <section class="py-2 gradient-custom-2" style="color: white;">
+    <div class="container">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col col-lg-9 col-xl-7">
+          <div class="card" style="background-color: #071B4E;">
+            <div class="rounded-top text-white d-flex flex-row" style="background-color: #000; height:200px;">
+              <div class="ms-4 mt-5 d-flex flex-column" style="width: 150px;">
+                <img src="imgs/perfil/foto.jpeg"
+                  alt="Generic placeholder image" class="img-fluid img-thumbnail mt-4 mb-2"
+                  style="width: 150px; z-index: 1">
+                <button type="button" class="btn btn-outline-dark" data-mdb-ripple-color="dark"
+                  style="z-index: 1;">
+                  Editar perfil
+                </button>
+              </div>
+              <div class="ms-3" style="margin-top: 130px;">
+                <h5>Mara howks</h5>
+                <p>Barra da Tijuca</p>
+              </div>
+            </div>
+            <div class="p-4 text-white" style="background-color: #E7803D;">
+              <div class="d-flex justify-content-end text-center py-1">
+                <div>
+                  <p class="mb-1 h5">47</p>
+                  <p class="small text-muted mb-0">Posts</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-body p-4 text-black">
+              <div class="mb-5">
+                <p class="lead fw-normal mb-1">About</p>
+                <div class="p-4" style="background-color: #E7803D;">
+                  <p class="font-italic mb-1">Web Developer</p>
+                  <p class="font-italic mb-1">Lives in New York</p>
+                  <p class="font-italic mb-0">Photographer</p>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center mb-4">
+                <p class="lead fw-normal mb-0">Recent photos</p>
+                <p class="mb-0"><a href="#!" class="text-muted">Show all</a></p>
+              </div>
+              <div class="row g-2">
+                <div class="col mb-2">
+                  <img src="https://mdbcdn.b-cdn.net/img/Photos/Lightbox/Original/img%20(112).webp"
+                    alt="image 1" class="w-100 rounded-3">
+                </div>
+                <div class="col mb-2">
+                  <img src="https://mdbcdn.b-cdn.net/img/Photos/Lightbox/Original/img%20(107).webp"
+                    alt="image 1" class="w-100 rounded-3">
+                </div>
+              </div>
+              <div class="row g-2">
+                <div class="col">
+                  <img src="https://mdbcdn.b-cdn.net/img/Photos/Lightbox/Original/img%20(108).webp"
+                    alt="image 1" class="w-100 rounded-3">
+                </div>
+                <div class="col">
+                  <img src="https://mdbcdn.b-cdn.net/img/Photos/Lightbox/Original/img%20(114).webp"
+                    alt="image 1" class="w-100 rounded-3">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      
-    </header> 
+    </div>
+  </section>
+  <!--footer-->
+  <footer class="position-sticky bg-dark text-white text-center p-1" style="position: fixed; left: 0; bottom: 0;" >
+    <h6>Copyright by Thiago da Silva Lima and colaborators</h6>
+  </footer>
 
-
-    <!--footer-->
-    <footer class="position-sticky bg-dark text-white text-center">
-        <h6>Copyright by Alunos do 3°DS - 2023</h6>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
   </body>
 </html>
